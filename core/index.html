@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    #webview {
+        position: absolute;
+        width: 100%;
+        height: 100%
+    }
+
+    .downloadBar {
+        width: 100%;
+    }
+
+    .downloadIcon {
+        width: 15px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotateZ(45deg);
+        border-top: 5px rgb(228, 69, 252) solid;
+        border-left: 5px rgb(228, 69, 252) solid;
+        opacity: .5;
+        cursor: pointer;
+        border-radius: 0;
+    }
+
+    .downloadItem {}
+    .line{
+        background: rgba(0,0,0,.5);
+    color: #fff;
+    width: 55px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- <webview id="webview" src="http://localhost:53480/index.html" allowpopups  preload="./apps/preload.js"></webview> -->
+    <webview id="webview" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A356 Safari/604.1" allowpopups preload="./apps/preload.js"></webview>
+    <ul id="lines" style="position: absolute;">
+        <li class="line" line="0">线路1</li>
+        <li class="line" line="1">线路2</li>
+        <li class="line" line="2">线路3</li>
+        <li class="line" line="3">线路4</li>
+        <li class="line" line="4">线路5</li>
+        <li class="line" line="5">线路6</li>
+        <li class="line" line="6">线路7</li>
+        <li class="line" line="7">线路8</li>
+        <li class="line" line="8">线路9</li>
+        <li class="line" line="9">线路10</li>
+        <li class="line" line="10">线路11</li>
+        <li class="line" line="11">线路12</li>
+        <li class="line" line="12">线路13</li>
+        <li class="line" line="13">线路14</li>
+        <li class="line" line="14">线路15</li>
+        <li class="line" line="15">线路16</li>
+        <p>当前线路 ---- 线路1</p>
+    </ul>
+    <!-- <webview id="webview" src="http://es.tes-sys.com/weare" allowpopups  preload="./apps/preload.js"></webview> -->
+    <!-- <i class="downloadIcon"></i>
+    <div class="downloadBar">
+        <div class="downloadItem">
+            <p></p>
+        </div>
+    </div> -->
+</body>
+<script>
+    require('./apps/renderer.js');
+</script>
+
+</html>

@@ -1,0 +1,17 @@
+{
+    "title": "cherry",
+    "useServer": false,
+    "localServerConfig": {
+        "PORT": 53480,
+        "root": "html"
+    },
+    "width": 1024,
+    "height": 768,
+    "minWidth": 1024,
+    "minHeight": 768,
+    "fullscreen": false,
+    "fullscreenable": true,
+    "staticUrl":"https://www.soku.com",
+    "downloadPath": "downloads",
+    "serverUrl": "http://es.tes-sys.com/ebook_services"
+}
